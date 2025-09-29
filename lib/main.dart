@@ -16,7 +16,18 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme(),
       home: Scaffold(
         appBar: AppBar(title: const Text("Flutter App")),
-        body: Center(
+        body: HomeWidget(),
+      ),
+    );
+  }
+}
+
+class HomeWidget extends StatelessWidget {
+  const HomeWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -34,8 +45,6 @@ class MyApp extends StatelessWidget {
               ),
             ],
           ),
-        ),
-      ),
     );
   }
 }
