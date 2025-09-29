@@ -9,14 +9,32 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var myColorScheme = ColorScheme.fromSeed(seedColor: Colors.green);
+
+
     return MaterialApp(
-      title: "Hello Flutter App",
+      title: "Flutter App",
+      theme: ThemeData(
+        colorScheme: myColorScheme,
+        appBarTheme: AppBarTheme(
+          backgroundColor: myColorScheme.inversePrimary,
+        ),
+      ),
       home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Flutter App")
+        ),
         body: Center(
-          child: const Text("Изучаем Flutter"),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text("Изучаем Flutter"),
+              ElevatedButton(onPressed: () {}, child: Text("Ok")),
+              FlutterLogo(size: 50.0),
+            ],
+          ),
         ),
       ),
     );
   }
-
 }
