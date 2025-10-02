@@ -7,23 +7,21 @@ class AppTheme {
     );
 
     return ThemeData(
-    colorScheme: colorScheme,
-    appBarTheme: AppBarTheme(
-      backgroundColor: colorScheme.primary,
-      foregroundColor: colorScheme.onPrimary,
-      centerTitle: true,
-    ),
-
-   elevatedButtonTheme: ElevatedButtonThemeData(
-    style: ElevatedButton.styleFrom(
-      backgroundColor: colorScheme.primary,
-      foregroundColor: colorScheme.onPrimary,
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(8),
+      colorScheme: colorScheme,
+      appBarTheme: AppBarTheme(
+        backgroundColor: colorScheme.primary,
+        foregroundColor: colorScheme.onPrimary,
+        centerTitle: true,
       ),
-    ),
-   ),
+
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: colorScheme.primary,
+          foregroundColor: colorScheme.onPrimary,
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+        ),
+      ),
       textTheme: TextTheme(
         displayLarge: TextStyle(fontSize: 57, color: colorScheme.onSurface),
         displayMedium: TextStyle(fontSize: 45, color: colorScheme.onSurface),
