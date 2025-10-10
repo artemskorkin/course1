@@ -6,6 +6,7 @@ import 'package:flutter_application_1/widgets/colors_widget.dart';
 import 'package:flutter_application_1/widgets/border_widget.dart';
 import 'package:flutter_application_1/widgets/rounded_widget.dart';
 import 'package:flutter_application_1/widgets/ex_container.dart';
+import 'package:flutter_application_1/widgets/expanded_widget.dart';
 import 'package:flutter/material.dart';
 import 'app_theme.dart';
 
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true, 
           title: const Text("Виджет Container"),
         ),
-        body: ContainerExample5(),
+        body: ExpandedExample(),
       ),
     );
   }
