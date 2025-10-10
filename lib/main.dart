@@ -4,6 +4,7 @@ import 'package:flutter_application_1/widgets/rich_text_widget.dart';
 import 'package:flutter_application_1/widgets/image_widget.dart';
 import 'package:flutter_application_1/widgets/colors_widget.dart';
 import 'package:flutter_application_1/widgets/border_widget.dart';
+import 'package:flutter_application_1/widgets/rounded_widget.dart';
 import 'package:flutter/material.dart';
 import 'app_theme.dart';
 
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           title: const Text("Виджет текст"),
         ),
-        body: BorderExample(),
+        body: RoundedImageExample5(),
       )
     );
   }
