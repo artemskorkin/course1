@@ -1,44 +1,53 @@
 import 'package:flutter/material.dart';
 
-
 class PizzaCard extends StatelessWidget {
   final double height;
-  const PizzaCard({super.key, this.height=200});
+  const PizzaCard({super.key, this.height = 220});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
+      width: 190,
       height: height,
-      padding: const EdgeInsets.all(10),
-
-      decoration: BoxDecoration(
+      child: Card(
+        margin: EdgeInsets.all(8),
         color: Colors.white,
-        border: Border.all(color: Colors.black),
-        borderRadius: BorderRadius.circular(16),
-      ),
-
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset("assets/images/pizza.webp", width: 80),
-          SizedBox(height: 10),
-          Text("Вкусная пицца", style: TextStyle(fontSize: 14)),
-          SizedBox(height: 10),
-          ElevatedButton(
-            onPressed: () {
-              print("Вы купили пиццу! Спасибо за заказ!");
-            },
-            child: Text(
-              "Купить",
-              style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-                fontSize: 10,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ClipRRect(
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(12), 
+                topRight: Radius.circular(12), 
+              ),
+              child: Image.asset(
+                "assets/images/pizza.png",
+                width: double.infinity,
+                height: 100,
+                fit: BoxFit.cover,
               ),
             ),
-          ),
-        ],
+            Expanded(
+              child: ListTile(
+                title: Text("Вкусная пицца"),
+                subtitle: Text(
+                  "Соус, пепперони, сыр",
+                  style: TextStyle(fontSize: 10),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 6),
+              child: TextButton(
+                onPressed: () {},
+                child: Text("Купить"),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
 }
+
