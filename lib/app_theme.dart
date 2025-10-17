@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppTheme {
   static ThemeData lightTheme() {
     final ColorScheme colorScheme = ColorScheme.fromSeed(
-      seedColor: Colors.green,
+      seedColor: Colors.blue,
     );
 
     return ThemeData(
