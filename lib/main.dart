@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/stateful_widgets/s1_stateful_widget.dart';
 import 'package:flutter_application_1/stateful_widgets/s2_stateful_widget.dart';
+import 'package:flutter_application_1/stateful_widgets/s3_button_widget.dart';
 import 'package:flutter_application_1/widgets/proba2.dart';
 import 'app_theme.dart';
 
@@ -22,12 +23,12 @@ class MyApp extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 32),
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Color(0xFFBF098), Color(0xFF6FD6FF)],
+              colors: [Color(0x0ffbf098), Color(0xFF6FD6FF)],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
           ),
-          child: Center(child: TrackCard()),
+          child: Center(child: InkWellExample()),
         ),
       ),
     );
