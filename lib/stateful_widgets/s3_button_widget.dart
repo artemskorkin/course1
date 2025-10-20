@@ -128,7 +128,9 @@ class ButtonStyleExample extends StatelessWidget {
   }
 }
 
-class GestureDetectorExample extends StatefulWidget {  
+class GestureDetectorExample extends StatefulWidget {
+  const GestureDetectorExample({super.key});
+  
   @override  
   State<GestureDetectorExample> createState() => _GestureDetectorExampleState(); 
 }  
@@ -166,7 +168,9 @@ class _GestureDetectorExampleState extends State<GestureDetectorExample> {
   }  
 }
 
-class InkWellExample extends StatelessWidget {  
+class InkWellExample extends StatelessWidget {
+  const InkWellExample({super.key});
+  
   @override  
   Widget build(BuildContext context) {  
     return Center(  

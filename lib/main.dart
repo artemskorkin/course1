@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/stateful_widgets/s1_stateful_widget.dart';
-import 'package:flutter_application_1/stateful_widgets/s2_stateful_widget.dart';
 import 'package:flutter_application_1/stateful_widgets/s3_button_widget.dart';
-import 'package:flutter_application_1/widgets/proba2.dart';
+import 'package:flutter_application_1/stateful_widgets/s4_stack_widget.dart';
 import 'app_theme.dart';
 
 void main() {
@@ -18,19 +16,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Flutter Course",
       theme: AppTheme.lightTheme(),
-      home: Scaffold(
-        body: Container(
-          padding: EdgeInsets.symmetric(horizontal: 32),
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Color(0x0ffbf098), Color(0xFF6FD6FF)],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: Center(child: InkWellExample()),
-        ),
-      ),
+      home: Scaffold(body: StackExample4()),
     );
   }
 }
+
